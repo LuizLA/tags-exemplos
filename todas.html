@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="todas.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Todas tags</title>
+</head>
+<body>
+    <header>
+        <div class="group-btn">
+            <button id="btn-black">
+                <i class="fa-regular fa-moon"></i>
+            </button>
+            <button id="btn-claro">
+                <i class="fa-regular fa-sun"></i>
+            </button>
+        </div>
+        <h1>Todas tags </h1>
+    </header>
+    
+    <main>
+        <form>
+            <input type="text" placeholder="digite seu nome">
+            <button id="btn-entrar">Entrar</button>
+        </form>
+    </main>
+
+    <script>
+        var btn_claro = document.querySelector('#btn-claro')
+        var btn_black = document.querySelector('#btn-black')
+        var btn_entrar = document.querySelector('#btn-entrar')
+        var main = document.querySelector('main')
+
+        btn_entrar.onclick = () => {
+            alert('Entrando ...')
+        }
+
+        btn_claro.onclick = () => {
+            main.style.background = "white"
+        }
+
+        btn_black.onclick = function(){
+            main.style.background = "black"
+        }
+    </script>
+</body>
+</html>
